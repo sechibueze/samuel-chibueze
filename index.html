@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Samuel Chibueze | Senior AI &amp; Full-Stack Engineer</title>
+<meta name="description" content="Samuel Chibueze: Senior AI and Full-Stack Engineer specialising in system design and architecture. Founding engineer (3x), payments, RAG and reliable backends.">
+<meta name="theme-color" content="#6d4aff">
+<meta property="og:title" content="Samuel Chibueze | Senior AI &amp; Full-Stack Engineer">
+<meta property="og:description" content="Software that keeps working when real people and real money depend on it.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5f6fb;--surface:#fff;--text:#12141f;--muted:#5b6078;--border:#e3e5f0;--a1:#6d4aff;--a2:#00b894;--glow:rgba(109,74,255,.14);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a0c16;--surface:#131728;--text:#eef0fa;--muted:#9aa0bd;--border:#242a44;--a1:#8f75ff;--a2:#2fe0b5;--glow:rgba(143,117,255,.2)}}
+:root[data-theme="dark"]{--bg:#0a0c16;--surface:#131728;--text:#eef0fa;--muted:#9aa0bd;--border:#242a44;--a1:#8f75ff;--a2:#2fe0b5;--glow:rgba(143,117,255,.2)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:'Poppins',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+.hero{position:relative;overflow:hidden;padding:84px 0 64px;background:radial-gradient(900px 400px at 85% -10%,var(--glow),transparent),radial-gradient(700px 360px at -10% 20%,rgba(0,184,148,.12),transparent)}
+.eyebrow{display:inline-block;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--a1);background:var(--glow);padding:6px 14px;border-radius:99px}
+h1{font-size:clamp(34px,6vw,64px);line-height:1.08;margin:20px 0 14px;font-weight:800;letter-spacing:-.02em}
+h1 .g{background:linear-gradient(90deg,var(--a1),var(--a2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:clamp(16px,2.2vw,20px);color:var(--muted);max-width:720px;margin:0 0 28px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.btn{font:600 14px 'Poppins',sans-serif;text-decoration:none;padding:12px 22px;border-radius:12px;border:1px solid var(--border);color:var(--text);background:var(--surface)}
+.btn.p{background:linear-gradient(90deg,var(--a1),var(--a2));color:#fff;border:0}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-top:44px}
+.stat{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:18px}
+.stat b{display:block;font-size:30px;font-weight:700;background:linear-gradient(90deg,var(--a1),var(--a2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat span{font-size:13px;color:var(--muted)}
+section{padding:60px 0 8px}
+h2{font-size:clamp(26px,4vw,38px);margin:0 0 8px;font-weight:700;letter-spacing:-.01em}
+.sub{color:var(--muted);margin:0 0 28px;max-width:680px}
+.hats{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px}
+.hat{background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:22px}
+.hat i{font-style:normal;font-size:26px;display:block;margin-bottom:8px}
+.hat h3{margin:0 0 6px;font-size:18px}
+.hat p{margin:0;color:var(--muted);font-size:14.5px}
+.proj{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:18px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:24px;display:flex;flex-direction:column;gap:10px;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-3px);box-shadow:0 14px 34px var(--glow)}
+.card.big{grid-column:1/-1;border-color:var(--a1);background:linear-gradient(135deg,var(--surface),var(--glow))}
+.role{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--a2)}
+.card h3{margin:0;font-size:21px}
+.card p{margin:0;color:var(--muted);font-size:14.5px}
+.card ul{margin:4px 0 0;padding-left:18px;font-size:14px}
+.card li{margin:5px 0}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:8px}
+.tags span{font-size:12px;font-weight:500;padding:4px 10px;border-radius:99px;background:var(--bg);border:1px solid var(--border);color:var(--muted)}
+.bg{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
+.bg::before{content:"";position:absolute;inset:0;background-image:radial-gradient(var(--border) 1.2px,transparent 1.2px);background-size:28px 28px;-webkit-mask-image:radial-gradient(ellipse at 50% 25%,#000 15%,transparent 78%);mask-image:radial-gradient(ellipse at 50% 25%,#000 15%,transparent 78%)}
+.orb{position:absolute;border-radius:50%;filter:blur(90px);opacity:.17;animation:drift 28s ease-in-out infinite alternate;will-change:transform}
+.o1{width:480px;height:480px;background:var(--a1);top:-140px;right:-120px}
+.o2{width:400px;height:400px;background:var(--a2);top:42%;left:-160px;opacity:.13;animation-duration:34s}
+.o3{width:360px;height:360px;background:var(--a1);bottom:-140px;right:12%;opacity:.12;animation-duration:40s}
+@keyframes drift{to{transform:translate3d(50px,70px,0) scale(1.12)}}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .orb{opacity:.28}:root:not([data-theme="light"]) .o2,:root:not([data-theme="light"]) .o3{opacity:.2}}
+:root[data-theme="dark"] .orb{opacity:.28}
+:root[data-theme="dark"] .o2,:root[data-theme="dark"] .o3{opacity:.2}
+@media (prefers-reduced-motion:reduce){.orb{animation:none}}
+.phil{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}.pr{background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:22px}.pr.k{border-color:var(--a1);background:linear-gradient(135deg,var(--surface),var(--glow))}.pr b{font-size:13px;font-weight:700;letter-spacing:.12em;color:var(--a2)}.pr h3{margin:6px 0;font-size:18px}.pr p{margin:0;color:var(--muted);font-size:14.5px}
+.lnk{font-size:13px;font-weight:600;color:var(--a1);text-decoration:none}.lnk:hover{text-decoration:underline}
+.stack{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.stack div{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:16px}
+.stack h4{margin:0 0 6px;font-size:14px;color:var(--a1)}
+.stack p{margin:0;font-size:13.5px;color:var(--muted)}
+footer{margin-top:70px;padding:56px 0 48px;text-align:center;border-top:1px solid var(--border)}
+footer h2{margin-bottom:10px}
+footer small{display:block;margin-top:26px;color:var(--muted)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="bg" aria-hidden="true"><i class="orb o1"></i><i class="orb o2"></i><i class="orb o3"></i></div>
+<header class="hero"><div class="wrap">
+<span class="eyebrow">Senior AI &amp; Full-Stack Engineer · System Design &amp; Architecture</span>
+<h1>Software that <span class="g">keeps working</span> when real people and real money depend on it.</h1>
+<p class="lead">I’m Samuel Chibueze: a three-time founding engineer and full-stack and AI engineer who turns messy real-world operations into reliable software: payments, bookings and AI workflows built for emerging markets, with the system design to scale them.</p>
+<div class="cta"><a class="btn p" href="mailto:sechibueze@gmail.com">Let’s talk</a><a class="btn" href="https://github.com/sechibueze">GitHub</a><a class="btn" href="https://linkedin.com/in/sechibueze">LinkedIn</a></div>
+<div class="stats">
+<div class="stat"><b>3×</b><span>founding engineer: Raenest, Pamundo, Bewtiq</span></div>
+<div class="stat"><b>5+ yrs</b><span>MVP to production</span></div>
+<div class="stat"><b>10</b><span>engineers &amp; designers led</span></div>
+<div class="stat"><b>99.9%</b><span>transaction success rate</span></div>
+<div class="stat"><b>60%</b><span>faster API responses</span></div>
+<div class="stat"><b>10k+</b><span>users on platforms I led</span></div>
+<div class="stat"><b>4</b><span>peer-reviewed SPE papers</span></div>
+</div></div></header>
+
+<main class="wrap">
+<section><h2>The hats I’ve worn</h2><p class="sub">Reliability comes from owning the whole problem. Here is how I have done that, role by role.</p>
+<div class="hats">
+<div class="hat"><i>🚀</i><h3>3× Founding Engineer</h3><p>Founding engineer at Raenest (first engineering hire), Pamundo and Bewtiq, taking Bewtiq from idea to production in under six months.</p></div>
+<div class="hat"><i>💳</i><h3>Payments Architect</h3><p>Paystack, Monnify, Nomba, Piggyvest and Stripe Connect, with signed webhooks, idempotency and row-locked wallets.</p></div>
+<div class="hat"><i>🤖</i><h3>AI Engineer</h3><p>Production RAG on OpenAI, provider-agnostic LLM layers, n8n agent workflows, Claude API and MCP.</p></div>
+<div class="hat"><i>🧱</i><h3>Full-Stack Builder</h3><p>Laravel, Node.js, FastAPI, Next.js SSG/ISR, React Native, Redis, Kafka, Docker and AWS.</p></div>
+<div class="hat"><i>🧭</i><h3>Team Lead &amp; Mentor</h3><p>Led teams of up to 10, set code-review standards, shipped weekly to daily, mentored and helped hire.</p></div>
+<div class="hat"><i>📐</i><h3>Researcher</h3><p>First Class Petroleum Engineering (CGPA 4.60/5.00) and four SPE papers: data-driven rigor in every design.</p></div>
+<div class="hat" style="order:-1"><i>🏛️</i><h3>System Designer &amp; Architect</h3><p>Event-driven microservices, provider-agnostic payment layers, caching strategy and RAG systems designed to serve 1M+ users.</p></div>
+</div></section>
+
+<section><h2>Engineering philosophy</h2><p class="sub">I build software people can bet their livelihoods on. These principles shape every system I design.</p>
+<div class="phil">
+<div class="pr k"><b>01</b><h3>Architect before you build</h3><p>Before code, I define boundaries, data flow, failure modes and cost at scale, and I write down the trade-offs. Good system design is what lets a small team ship fast without painting itself into a corner.</p></div>
+<div class="pr"><b>02</b><h3>Reliability is a feature, not a phase</h3><p>When software moves money and books someone’s working day, failure is lost income. I design for idempotency, verified webhooks, locked transactions and monitoring from the first commit.</p></div>
+<div class="pr"><b>03</b><h3>Start with the person, not the stack</h3><p>The best solution is the one people will actually use, whether that is a WhatsApp message instead of an app install or a booking flow for a salon owner who used to run on a notebook.</p></div>
+<div class="pr"><b>04</b><h3>Own the problem end to end</h3><p>As a three-time founding engineer, I stay hands-on from API design to deployment, so every architectural decision is tested against real constraints, not slideware.</p></div>
+<div class="pr"><b>05</b><h3>If it matters, measure it</h3><p>My petroleum engineering training taught me to reason from data. I set a baseline, make the change, and prove it with numbers like latency, success rate and uptime.</p></div>
+<div class="pr"><b>06</b><h3>Design for change, scale on demand</h3><p>I ship the MVP first, but behind clean boundaries (service layers, provider-agnostic integrations, events and caching) so growth to a million users is an upgrade, not a rewrite.</p></div>
+<div class="pr"><b>07</b><h3>Make AI earn its place</h3><p>I treat AI as an engineered system: grounded answers, rate limits, caching, observability and cost control, so it delivers value without surprise bills or surprise behaviour.</p></div>
+</div></section>
+
+<section><h2>The work</h2><p class="sub">Each project below is something I designed and shipped, with the problem, the people it serves and the value it created.</p>
+<div class="proj">
+
+<article class="card big" style="order:5"><span class="role">Founding Engineer · SaaS · Payments</span><h3>Bewtiq: booking, payments &amp; business management</h3>
+<a class="lnk" href="https://github.com/bewtiqorigin/bewtiq-backend--mvp">View the repo ↗</a>
+<p>A beauty-tech platform that replaces phone-and-notebook scheduling for salons and wellness providers, serving thousands of active users on web and mobile.</p>
+<ul>
+<li><b>Engineered</b> a real-time Laravel booking algorithm for staff availability and concurrency, eliminating double-bookings and lifting utilisation 30%+.</li>
+<li><b>Architected</b> a provider-agnostic payment layer over Paystack, Monnify, Piggyvest and Nomba with verified, normalised webhooks, reaching 99.9% transaction success.</li>
+<li><b>Implemented</b> wallets and payouts with DB transactions and row-level locking, protecting balances from race conditions.</li>
+<li><b>Designed</b> tagged Redis caching that cut API response times 60% at peak, and a SendGrid/Twilio/FCM notification system that reduced missed appointments 25%.</li>
+<li><b>Established</b> GitHub Actions CI/CD with Docker and zero-downtime deploys, moving releases from weekly to daily and cutting rollbacks 70%.</li>
+</ul>
+<div class="tags"><span>Laravel 12</span><span>PHP 8.2</span><span>Redis</span><span>Next.js</span><span>JWT</span><span>Docker</span><span>AWS</span><span>Sentry</span><span>Inspector.dev</span></div></article>
+
+<article class="card big" style="order:1"><span class="role">AI Engineer · RAG</span><h3>Dokkuchat AI: chat with your documents</h3>
+<a class="lnk" href="https://github.com/sechibueze/dokkuchat-ai">View the repo ↗</a>
+<p>A production RAG system that lets professionals, students and teams ask questions of documents they upload and get grounded answers. Designed from day one to serve at least 1 million users.</p>
+<ul>
+<li><b>Built</b> an ingestion-to-answer pipeline (chunking, OpenAI embeddings, similarity retrieval, OpenAI LLM generation), so people get grounded answers from their own documents in seconds instead of searching page by page.</li>
+<li><b>Implemented</b> an MCP server and MCP client, so AI assistants and agent workflows can query a user’s documents directly, with no custom integration work for each tool.</li>
+<li><b>Architected</b> for 1M+ users with rate limiting, queues and monitoring, keeping LLM spend predictable and the service available as usage grows.</li>
+<li><b>Added</b> caching for repeated queries and queues for heavy ingestion, cutting redundant LLM calls (lower cost, lower latency) and keeping the API fast under load.</li>
+<li><b>Instrumented</b> the service with Prometheus so latency and failures are visible in production.</li>
+</ul>
+<div class="tags"><span>OpenAI Embeddings</span><span>OpenAI LLM</span><span>RAG</span><span>Caching</span><span>Job queues</span><span>Rate limiting</span><span>Prometheus</span><span>MCP Server</span><span>MCP Client</span></div></article>
+
+<article class="card" style="order:3"><span class="role">AI · Python</span><h3>Sambot: personal AI assistant</h3>
+<a class="lnk" href="https://github.com/sechibueze/sambot-ai">View the repo ↗</a>
+<p>A personal AI assistant that gives founders and knowledge workers one place to research, summarise and draft, so less time goes to repetitive thinking work.</p>
+<ul><li><b>Freed</b> knowledge workers from repetitive research, summarising and first-draft work, so more of their time goes to decisions and deep work.</li><li><b>Kept</b> sensitive work private and costs low by running on local models (Ollama) with no per-token fees, switching to cloud models only when more power is needed.</li><li><b>Designed</b> an abstract LLMProvider layer (OpenAI, Ollama) that protects the investment from vendor lock-in: teams can move to a cheaper or better model without rebuilding the product.</li><li><b>Packaged</b> the assistant with Docker, pytest and ruff, so it deploys the same way everywhere and changes are tested before they ship.</li></ul>
+<div class="tags"><span>Python</span><span>Streamlit</span><span>Ollama</span><span>pytest</span><span>Docker</span></div></article>
+
+<article class="card" style="order:4"><span class="role">Automation · Community Safety</span><h3>RapidReach: one-message emergency dispatch</h3>
+<a class="lnk" href="https://github.com/sechibueze/rapid-reach-ai">View the repo ↗</a>
+<p>Residents trigger a verified neighbourhood emergency response from WhatsApp, with no app install.</p>
+<ul><li><b>Architected</b> an event-driven n8n workflow linking WhatsApp, Google Sheets and Gmail into a working MVP with no custom backend, so pilots launch faster and cost less to run.</li><li><b>Integrated</b> the WhatsApp Business API so residents report from an app they already use, removing the app-install barrier in an emergency.</li><li><b>Validated</b> emergency codes with n8n Data Tables and resolved residents to local agents through Google Sheets, cutting false alarms and wasted responder effort.</li><li><b>Automated</b> Gmail dispatch emails, WhatsApp confirmations and an incident audit log, so every incident is acknowledged and traceable.</li></ul>
+<div class="tags"><span>n8n</span><span>WhatsApp Business</span><span>Gmail</span><span>Google Sheets</span></div></article>
+
+<article class="card" style="order:2"><span class="role">Backend Lead · EdTech</span><h3>Workbit: a learning-to-earning pathway for young people</h3>
+<a class="lnk" href="https://github.com/sechibueze/workbit-backend--mvp">View the repo ↗</a>
+<p>An AI-powered learning-to-earning ecosystem for young people. It matches their interests to skills and their skills to real work opportunities, then supports apprenticeships with local businesses, verified digital portfolios and micro-business launch, easing youth unemployment and the shortage of skilled artisans.</p>
+<ul><li><b>Integrated</b> AI matching that maps a young person’s interests to skills, and skills to work opportunities, shortening the path from learning to earning.</li><li><b>Led</b> the TypeScript backend MVP covering profiles, apprenticeship placement, portfolio verification and business onboarding.</li><li><b>Built</b> verified portfolios so employers and customers can trust a young person’s skills, lowering hiring risk for local businesses.</li><li><b>Opened</b> an income route beyond scarce white-collar jobs while growing the supply of verified local artisans.</li></ul>
+<div class="tags"><span>TypeScript</span><span>Node.js</span><span>REST API</span><span>AI matching</span><span>MVP</span></div></article>
+
+<article class="card" style="order:6"><span class="role">Full-Stack · E-commerce</span><h3>Product Catalog &amp; Reviews</h3>
+<a class="lnk" href="https://github.com/sechibueze/fullstack-product-catalog">View the repo ↗</a>
+<p>Fast, SEO-friendly storefront plus an admin panel for products and review moderation.</p>
+<ul><li><b>Designed</b> a layered architecture (Laravel 12 service layer on PostgreSQL, Next.js SSG/ISR frontend) that keeps business rules in one place, making changes cheaper and safer to ship.</li><li><b>Implemented</b> tagged Redis caching with TTLs, cutting database reads while keeping prices and reviews fresh.</li><li><b>Delivered</b> Next.js 15 SSG/ISR pages that load instantly and rank well in search, supporting conversion.</li><li><b>Shipped</b> a TanStack Query optimistic admin UI, 50+ PHPUnit tests and GitHub Actions CI/CD to EC2, so admins work faster and releases are safe.</li></ul>
+<div class="tags"><span>Laravel 12</span><span>Next.js 15</span><span>PostgreSQL</span><span>Redis</span><span>OpenAPI</span></div></article>
+
+<article class="card" style="order:7"><span class="role">Architecture · Marketplace</span><h3>StepStore: event-driven microservices</h3>
+<a class="lnk" href="https://github.com/sechibueze/stepstore-microservices">View the repo ↗</a>
+<p>A creator marketplace split into independent services so auth, products and notifications evolve safely.</p>
+<ul><li><b>Built</b> a JWT and bcrypt identity service with access and refresh tokens, giving the marketplace a secure sign-in foundation.</li><li><b>Created</b> a reusable Kafka manager (kafkajs) publishing events like user.created, so features such as notifications ship without touching other services.</li><li><b>Enforced</b> contracts with Zod and a standard response builder, reducing integration bugs between teams and clients.</li><li><b>Architected</b> a microservice, event-driven system with per-service PostgreSQL databases, shared TypeORM base entities and Docker, so services scale, fail and deploy independently.</li></ul>
+<div class="tags"><span>Node.js</span><span>Kafka</span><span>TypeORM</span><span>Zod</span><span>Docker</span></div></article>
+
+<article class="card" style="order:8"><span class="role">Founding Engineer · Payments · B2B</span><h3>Pamundo API: wholesale grocery</h3>
+<a class="lnk" href="https://github.com/pamundo/pamundo-api--mvp">View the repo ↗</a>
+<p>Connects wholesalers and small retailers with vendor onboarding, consolidated orders and per-vendor payouts.</p>
+<ul><li><b>Integrated</b> Stripe Connect to onboard vendors through account links and pay each vendor directly, with the 5% platform fee captured automatically.</li><li><b>Enforced</b> idempotency keys and signature-verified webhooks, so retries never double-charge and payment status stays accurate.</li><li><b>Modelled</b> vendors, products and orders in TypeORM and PostgreSQL, letting retailers order from several wholesalers in one flow.</li><li><b>Added</b> Pino logging, Zod validation, Cloudinary and SendGrid/Twilio notifications for clean data, fast support and clear order updates.</li></ul>
+<div class="tags"><span>TypeScript</span><span>Stripe Connect</span><span>PostgreSQL</span><span>Cloudinary</span></div></article>
+
+<article class="card" style="order:9"><span class="role">Full-Stack · Impact Tech</span><h3>EF4A: Impact Fund for Africa</h3>
+<a class="lnk" href="https://github.com/sechibueze/ef4a-backend">View the backend repo ↗</a>
+<p>Lets education and social programmes run campaigns and receive funds with an auditable trail.</p>
+<ul><li><b>Built</b> the frontend in Next.js and TypeScript, delivering fast, type-safe campaign pages that help turn visitors into donors.</li><li><b>Implemented</b> an Express and TypeScript API with verified-user JWT auth, so only trusted accounts launch projects, reducing fraud.</li><li><b>Integrated</b> Paystack for donations and payouts, Cloudinary for images and SendGrid for emails, raising donor trust with little operational overhead.</li><li><b>Modelled</b> users, projects and transactions in TypeORM and PostgreSQL for transactional integrity and an auditable money trail.</li></ul>
+<div class="tags"><span>Next.js</span><span>TypeScript</span><span>Express</span><span>TypeORM</span><span>Paystack</span><span>JWT</span></div></article>
+
+<article class="card" style="order:10"><span class="role">EdTech · Accessibility</span><h3>SignBridge: sign-language learning</h3>
+<p>Teaches ASL and ISL through structured lessons and camera-based practice.</p>
+<ul><li><b>Built</b> annotated, documentation-style lessons (handshape, location, movement, common mistakes), so learners understand how signs are formed instead of memorising them.</li><li><b>Contributed</b> to SignLab, a camera-based practice space with mirror mode, letting learners practise independently against visual references, with no tutor needed.</li><li><b>Implemented</b> progress scoring that stores each attempt, so practice time goes to the signs that need it most.</li><li><b>Grounded</b> the content in ASLLVD and INCLUDE reference material with original illustrations, keeping lessons accurate.</li></ul>
+<div class="tags"><span>Web</span><span>Camera practice</span><span>Progress tracking</span></div></article>
+
+</div></section>
+
+<section><h2>Toolbox</h2><p class="sub">The stack behind software that stays up.</p>
+<div class="stack">
+<div><h4>Architecture &amp; System Design</h4><p>Distributed systems, microservices, event-driven design (Kafka), API design, caching strategy, scalability, reliability and observability</p></div>
+<div><h4>Languages</h4><p>TypeScript, JavaScript, PHP, Python</p></div>
+<div><h4>Backend</h4><p>Laravel, Node.js, Express, FastAPI, microservices, event-driven design</p></div>
+<div><h4>Frontend</h4><p>React, Next.js (SSG/ISR), React Native</p></div>
+<div><h4>AI &amp; Automation</h4><p>RAG, OpenAI &amp; Anthropic APIs, Ollama, MCP, agents, n8n, vector search</p></div>
+<div><h4>Data &amp; Messaging</h4><p>PostgreSQL, MySQL, Redis, Kafka, RabbitMQ</p></div>
+<div><h4>Infra &amp; Observability</h4><p>Docker, AWS, GCP, GitHub Actions, Prometheus, Grafana, Sentry</p></div>
+</div></section>
+</main>
+
+<footer><div class="wrap"><h2>Need software you can rely on?</h2><p class="sub" style="margin:0 auto 22px">Let’s build something that works on day one and keeps working at scale.</p>
+<div class="cta" style="justify-content:center"><a class="btn p" href="mailto:sechibueze@gmail.com">sechibueze@gmail.com</a><a class="btn" href="tel:+2348136363673">+234 813 636 3673</a></div>
+<small>Samuel Chibueze · Lagos, Nigeria</small></div></footer>
+</body>
+</html>
